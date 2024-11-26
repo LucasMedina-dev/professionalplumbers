@@ -1,0 +1,54 @@
+---
+import Qr from "../../public/qr.astro";
+---
+
+<header class="w-full h-dvh bg-cover background-header">
+    <div class="h-full flex flex-row justify-between items-end px-12 pb-20">
+        <div class="flex flex-col w-2/3">
+            <h2 class="text-3xl text-white">GAS Y PLOMERIA EN MAR DEL PLATA</h2>
+            <h1 class="text-5xl font-bold text-wrap w-min leading-10 tracking-widest text-white">PROFESSIONAL PLUMBERS</h1>
+            <p class="pt-3 text-white">Especialistas en soluciones de plomería en general, brindamos servicios confiables y de alta calidad. ¡Tu tranquilidad es nuestra prioridad!</p>
+            <div class="flex flex-row justify-between pt-3">
+                <div class="w-48 h-32 relative background-alert bg-cover flex flex-col justify-end rounded-md overflow-hidden">
+                    <span class="bg-orange-600 py-3 text-center text-black font-semibold">
+                        EMERGENCIAS 24HS
+                    </span>
+                </div>
+                <div class="w-48 h-32 relative background-gas bg-cover flex flex-col justify-end rounded-md overflow-hidden">
+                    <span class="bg-orange-600 py-3 text-center text-black font-semibold">
+                        GAS NATURAL
+                    </span>
+                </div>
+                <div class="w-48 h-32 relative background-plomeria bg-cover flex flex-col justify-end rounded-md overflow-hidden">
+                    <span class="bg-orange-600 py-3 text-center text-black font-semibold">
+                        PLOMERIA
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="bg-slate-100 pt-3 pb-4 flex flex-col justify-between rounded-lg">
+            <span class="text-black	font-bold mx-auto">WHATSAPP</span>
+            <span class="bg-orange-500 w-2/3 mx-auto h-px flex"></span>
+            <div class="h-56 pt-3 px-3"><Qr></Qr></div>
+        </div>
+    </div>
+</header>
+
+<style>
+
+.background-header{
+		background-image: url('/main.jpg');
+	}
+	.background-alert{
+		background-image: url('/24hs.jpg');
+	}
+	.background-gas{
+		background-image: url('/gas.jpg');
+	}
+	.background-plomeria{
+		background-image: url('/plomeria.jpg');
+	}
+	.background-qr{
+		background-image: url('/professionalplumbers.svg');
+	}
+</style>
