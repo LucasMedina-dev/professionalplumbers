@@ -1,6 +1,7 @@
 ---
-import Qr from "../../public/qr.astro";
+import Contact from "./contact.astro";
 import Header from "./header.astro";
+import Ourgallery from "./ourgallery.astro";
 import Services from "./services.astro";
 
 
@@ -17,6 +18,8 @@ import Services from "./services.astro";
 	<body>
 		<Header></Header>
 		<Services></Services>
+		<Ourgallery></Ourgallery>
+		<Contact></Contact>
 	</body>
 </html>
 
@@ -26,6 +29,7 @@ import Services from "./services.astro";
 
 	*{
 		font-family: "Source Sans 3", sans-serif;
+		scroll-behavior: smooth;
 	}
 	
 </style>

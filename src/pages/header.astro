@@ -1,35 +1,36 @@
 ---
-import Qr from "../../public/qr.astro";
 ---
 
 <header class="w-full h-dvh bg-cover background-header">
     <div class="h-full flex flex-row justify-between items-end px-12 pb-20">
-        <div class="flex flex-col w-2/3">
-            <h2 class="text-3xl text-white">GAS Y PLOMERIA EN MAR DEL PLATA</h2>
-            <h1 class="text-5xl font-bold text-wrap w-min leading-10 tracking-widest text-white">PROFESSIONAL PLUMBERS</h1>
-            <p class="pt-3 text-white">Especialistas en soluciones de plomería en general, brindamos servicios confiables y de alta calidad. ¡Tu tranquilidad es nuestra prioridad!</p>
-            <div class="flex flex-row justify-between pt-3">
-                <div class="w-48 h-32 relative background-alert bg-cover flex flex-col justify-end rounded-md overflow-hidden">
-                    <span class="bg-orange-600 py-3 text-center text-black font-semibold">
+        <div class="flex flex-col lg:w-2/3 w-full">
+            <h2 class="text-3xl text-orange-600 max-sm:text-sm xl:text-4xl">GAS Y PLOMERIA EN MAR DEL PLATA</h2>
+            <h1 class="text-5xl font-bold text-wrap w-min leading-10 tracking-widest text-white xl:text-7xl max-sm:text-3xl">PROFESSIONAL PLUMBERS</h1>
+            <p class="pt-3 text-white xl:text-xl max-sm:text-xs">Especialistas en soluciones de plomería en general, brindamos servicios confiables y de alta calidad. ¡Tu tranquilidad es nuestra prioridad!</p>
+            <div class="flex flex-row justify-start gap-x-2 xl:gap-x-10 pt-3 flex-wrap">
+                <div class="max-sm:w-32 max-sm:h-20  w-48 h-32 xl:w-60 xl:h-36 relative background-alert bg-cover flex flex-col justify-end rounded-md overflow-hidden">
+                    <span class="bg-orange-600 py-3 text-center text-black font-semibold text-xs xl:text-xl max-sm:py-2">
                         EMERGENCIAS 24HS
                     </span>
                 </div>
-                <div class="w-48 h-32 relative background-gas bg-cover flex flex-col justify-end rounded-md overflow-hidden">
-                    <span class="bg-orange-600 py-3 text-center text-black font-semibold">
+                <div class="max-sm:w-32 max-sm:h-20  w-48 h-32 xl:w-60 xl:h-36 relative background-gas bg-cover flex flex-col justify-end rounded-md overflow-hidden">
+                    <span class="bg-orange-600 py-3 text-center text-black font-semibold text-xs xl:text-xl max-sm:py-2">
                         GAS NATURAL
                     </span>
                 </div>
-                <div class="w-48 h-32 relative background-plomeria bg-cover flex flex-col justify-end rounded-md overflow-hidden">
-                    <span class="bg-orange-600 py-3 text-center text-black font-semibold">
+                <div class="max-sm:w-32 max-sm:h-20  w-48 h-32 xl:w-60 xl:h-36 relative background-plomeria bg-cover flex flex-col justify-end rounded-md overflow-hidden">
+                    <span class="bg-orange-600 py-3 text-center text-black font-semibold text-xs xl:text-xl max-sm:py-2">
                         PLOMERIA
                     </span>
                 </div>
             </div>
         </div>
-        <div class="bg-slate-100 pt-3 pb-4 flex flex-col justify-between rounded-lg">
+        <div class="bg-slate-100 pt-3 pb-4 flex flex-col justify-between rounded-lg max-md:hidden">
             <span class="text-black	font-bold mx-auto">WHATSAPP</span>
             <span class="bg-orange-500 w-2/3 mx-auto h-px flex"></span>
-            <div class="h-56 pt-3 px-3"><Qr></Qr></div>
+            <div class="h-44 pt-3 px-3">
+                <img class="h-full object-cover" src="/professionalplumbers.svg" alt="">
+            </div>
         </div>
     </div>
 </header>
