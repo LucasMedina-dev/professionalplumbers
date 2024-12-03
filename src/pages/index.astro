@@ -1,8 +1,8 @@
 ---
-import Contact from "./contact.astro";
-import Header from "./header.astro";
-import Ourgallery from "./ourgallery.astro";
-import Services from "./services.astro";
+import Contact from "../components/contact.astro";
+import Header from "../components/header.astro";
+import Ourgallery from './ourgallery.jsx'
+import Services from "../components/services.astro";
 
 
 ---
@@ -10,15 +10,15 @@ import Services from "./services.astro";
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/x-icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Professional Plumbers</title>
 	</head>
 	<body>
 		<Header></Header>
 		<Services></Services>
-		<Ourgallery></Ourgallery>
+		<Ourgallery client:load></Ourgallery>
 		<Contact></Contact>
 	</body>
 </html>
@@ -30,6 +30,7 @@ import Services from "./services.astro";
 	*{
 		font-family: "Source Sans 3", sans-serif;
 		scroll-behavior: smooth;
+		user-select: none;
 	}
 	
 </style>
