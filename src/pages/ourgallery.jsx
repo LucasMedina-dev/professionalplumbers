@@ -46,7 +46,7 @@ export default function Ourgallery() {
         </div>
       </div>
         {
-            open && (<Gallery closeGallery={closeGallery} ></Gallery>)
+            open && (<Gallery closeGallery={closeGallery}></Gallery>)
         }
       
       </>

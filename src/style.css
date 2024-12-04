@@ -1,0 +1,8 @@
+@keyframes show {
+    100%{
+        opacity: 100%;
+    }
+}
+.show{
+    animation: show 200ms forwards normal ease;
+}
